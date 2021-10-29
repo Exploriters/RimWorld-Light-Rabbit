@@ -29,7 +29,7 @@
            <li>Blunt</li>
          </capacities>
          <power>1</power>
-         <cooldownTime>0.1</cooldownTime>
+         <cooldownTime>0.2</cooldownTime>
          <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
          <surpriseAttack>
            <extraMeleeDamages>
@@ -134,7 +134,112 @@
 		<allowHumanBios>true</allowHumanBios>
 		<minAgeForAdulthood>0</minAgeForAdulthood>
 		<humanRecipeImport>true</humanRecipeImport>
+		<alienPartGenerator>
+          <aliencrowntypes>
+            <li>LightRabbit_Head</li>
+          </aliencrowntypes>
+          <alienbodytypes>
+            <li>Male</li>
+            <li>Female</li>
+          </alienbodytypes>
+          <useGenderedHeads>false</useGenderedHeads>
+          <colorChannels>
+		    <li>
+			  <name>skin</name>
+			  <!--Fur-->
+              <first Class="ColorGenerator_Options">
+			    <options>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(1,0.906,0.514,1)</only>
+                  </li>
+			    </options>
+              </first>
+			  <!--Eyes-->
+              <second Class="ColorGenerator_Options">
+			    <options>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(1,0.498,0.153,1)</only>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(0.157,0.922,1,1)</only>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(0.153,0.957,0.2,1)</only>
+                  </li>
+			    </options>
+              </second>
+		    </li>
+          </colorChannels>
+		  <bodyAddons>
+            <li>
+              <path>Things/Pawn/LightRabbit/Ears/LightRabbit_LEars</path>
+              <bodyPart>left ear</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <drawnInBed>true</drawnInBed>
+              <!--<drawnDesiccated>false</drawnDesiccated>-->
+              <colorChannel>skin</colorChannel>
+              <offsets>
+                <south>
+                  <crownTypes>
+                    <LightRabbit_Head>(0,-0.2)</LightRabbit_Head>
+                  </crownTypes>
+                  <layerOffset>-0.7</layerOffset>
+                </south>
+                <north>
+                  <crownTypes>
+                    <LightRabbit_Head>(0,0)</LightRabbit_Head>
+                  </crownTypes>
+                </north>
+                <east>
+                  <crownTypes>
+                    <LightRabbit_Head>(-0.01,-0.19)</LightRabbit_Head>
+                  </crownTypes>
+                  <layerOffset>-0.3</layerOffset>
+                </east>
+              </offsets>
+              <defaultOffset>Head</defaultOffset>
+            </li>
+            <li>
+              <path>Things/Pawn/LightRabbit/Ears/LightRabbit_REars</path>
+              <bodyPart>right ear</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <drawnInBed>true</drawnInBed>
+              <!--<drawnDesiccated>false</drawnDesiccated>-->
+              <colorChannel>skin</colorChannel>
+              <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+              <offsets>
+                <south>
+                  <crownTypes>
+                    <LightRabbit_Head>(0,-0.2)</LightRabbit_Head>
+                  </crownTypes>
+                  <layerOffset>-0.7</layerOffset>
+                </south>
+                <north>
+                  <crownTypes>
+                    <LightRabbit_Head>(0,0)</LightRabbit_Head>
+                  </crownTypes>
+                  <layerOffset>-0.3</layerOffset>
+                </north>
+                <east>
+                  <crownTypes>
+                    <LightRabbit_Head>(0,-0.17)</LightRabbit_Head>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <defaultOffset>Head</defaultOffset>
+            </li>
+		  </bodyAddons>
+		</alienPartGenerator>
 	  </generalSettings>
+      <graphicPaths>
+        <li>
+          <head>Things/Pawn/LightRabbit/Head/</head>
+        </li>
+      </graphicPaths>
 	  <thoughtSettings>
 	    <!-- 新增想法 -->
 	    <restrictedThoughts>
@@ -268,5 +373,5 @@
 		</cannotReceiveThoughts>
 	  </thoughtSettings>
 	</alienRace>
-  <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+  </AlienRace.ThingDef_AlienRace>
 </Defs>
