@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerFactionGloryElveDynasty</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->辉明王朝</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerSettlementGloryElveDynasty</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->辉明殖民地</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -71,7 +71,7 @@
       </li>
     </stages>
   </ThoughtDef>
-  
+
   <ThoughtDef ParentName="DeathMemory">
     <defName>KnowPrisonerDiedInnocent_LightRabbit</defName>
     <durationDays>6</durationDays>
@@ -134,7 +134,7 @@
       </li>
     </stages>
   </ThoughtDef>
-  
+
   <ThoughtDef>
     <defName>AteCorpse_LightRabbit</defName>
     <showBubble>true</showBubble>
@@ -148,7 +148,7 @@
       </li>
     </stages>
   </ThoughtDef>
-  
+
   <ThoughtDef>
     <defName>AteRottenFood_LightRabbit</defName>
     <showBubble>true</showBubble>
@@ -214,7 +214,7 @@
       </li>
     </stages>
   </ThoughtDef>
-  
+
   <ThoughtDef>
     <defName>SleptInBarracks_LightRabbit</defName>
     <durationDays>1</durationDays>
@@ -281,7 +281,7 @@
       </li>
     </stages>
   </ThoughtDef>
-  
+
   <ThoughtDef ParentName="LostMemory">
     <defName>BondedAnimalReleased_LightRabbit</defName>
     <showBubble>true</showBubble>
@@ -299,7 +299,7 @@
       </li>
     </stages>
   </ThoughtDef>
-  
+
   <ThoughtDef ParentName="LostMemory">
     <defName>BondedAnimalLost_LightRabbit</defName>
     <showBubble>true</showBubble>

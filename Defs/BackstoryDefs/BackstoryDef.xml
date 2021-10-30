@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AlienRace.BackstoryDef>
+    <defName>GloryElveDynastyChildhood</defName>
+    <title>辉明兔</title>
+    <titleShort>辉明兔</titleShort>
+    <baseDescription>来自辉明王朝。</baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>LightRabbit</li>
+      <li>GloryElveDynastyBackstories</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+</Defs>

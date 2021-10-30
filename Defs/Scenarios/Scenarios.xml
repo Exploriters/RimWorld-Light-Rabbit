@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ScenarioDef>
+    <defName>LightRabbitScenario</defName>
+    <label>辉明兔</label>
+    <description>一群从辉明王朝脱离出来的兔子，似乎是为什么目的而行进着。</description>
+    <scenario>
+      <summary>一群从辉明王朝脱离出来的兔子。</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>LightRabbitPlayerFaction</factionDef>
+      </playerFaction>
+      <parts>
+        <!--<li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>一群从辉明王朝脱离出来的兔子，似乎是为什么目的而行进着。</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>-->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

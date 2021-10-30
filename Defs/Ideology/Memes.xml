@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <Explorite.MemeDef_Ex>
+    <defName>Structure_GloryElveDynasty</defName>
+    <label>辉明王朝</label>
+    <description>宇宙的道德结构由辉明王朝决定。</description>
+    <category>Structure</category>
+    <iconPath>UI/Ideology/GloryElveDynastyWhite</iconPath>
+    <!--<iconPath>UI/Structures/Archist</iconPath>-->
+    <impact>0</impact>
+    <randomizationSelectionWeightFactor>0.0</randomizationSelectionWeightFactor>
+    <deityCount>0</deityCount>
+    <renderOrder>88000</renderOrder>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->辉明</li>
+        <li>memeCreed->辉明</li>
+        <li>memeHyphenPrefix->辉明</li>
+        <li>memeLeaderNoun->领袖</li>
+        <li>memeLeaderAdjective->辉明</li>
+        <li>memeMoralist->传道者</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>GloryElveDynastyDescription</def>
+        </li>
+      </patterns>
+      <constants />
+    </descriptionMaker>
+    <worshipRoomLabel>ritual room</worshipRoomLabel>
+    <symbolPacks>
+      <li>
+        <ideoName>辉明</ideoName>
+        <theme>辉明</theme>
+        <adjective>辉明</adjective>
+        <member>辉明民众</member>
+      </li>
+    </symbolPacks>
+
+    <exclusiveTo>
+      <li>LightRabbitPlayerFaction</li>
+    </exclusiveTo>
+    <islocateGroup>GloryElveDynastyMeme</islocateGroup>
+    <lockAccuIdeoColor>true</lockAccuIdeoColor>
+    <overrdieIcon>true</overrdieIcon>
+  </Explorite.MemeDef_Ex>
+
+  <Explorite.MemeDef_Ex>
+    <defName>GloryElveDynastyMeme</defName>
+    <label>辉明王朝</label>
+    <description>辉明王朝的文化。</description>
+    <iconPath>UI/Ideology/GloryElveDynastyYellow</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>3</impact>
+    <randomizationSelectionWeightFactor>0.0</randomizationSelectionWeightFactor>
+    <renderOrder>8800</renderOrder>
+
+    <veneratedAnimalsCountOffset>-10</veneratedAnimalsCountOffset>
+    <veneratedAnimalsCountOverride>0</veneratedAnimalsCountOverride>
+
+    <exclusionTags />
+    <!--<requireOne>
+      <li>
+        <li>Blinding_Horrible</li>
+      </li>
+      <li>
+        <li>Cannibalism_Disgusting_EX</li>
+      </li>
+      <li>
+        <li>Corpses_Ugly</li>
+      </li>
+      <li>
+        <li>DrugUse_MedicalOnly_SoftCareOthers_EX</li>
+      </li>
+      <li>
+        <li>Execution_DontCare</li>
+      </li>
+      <li>
+        <li>FungusEating_Despised</li>
+      </li>
+      <li>
+        <li>Lovin_Rejcet_EX</li>
+      </li>
+      <li>
+        <li>IdeoDiversity_Standard</li>
+      </li>
+      <li>
+        <li>InsectMeatEating_Despised_Classic</li>
+      </li>
+      <li>
+        <li>MarriageName_KeepNames</li>
+      </li>
+      <li>
+        <li>Nudity_Male_NoRules</li>
+      </li>
+      <li>
+        <li>Nudity_Female_NoRules</li>
+      </li>
+      <li>
+        <li>NutrientPasteEating_Disgusting</li>
+      </li>
+      <li>
+        <li>OrganUse_Acceptable</li>
+      </li>
+      <li>
+        <li>Proselytizing_Prohibited_EX</li>
+      </li>
+      <li>
+        <li>Research_VeryFast</li>
+      </li>
+      <li>
+        <li>Scarification_Horrible</li>
+      </li>
+      <li>
+        <li>Slavery_Acceptable</li>
+      </li>
+      <li>
+        <li>SpouseCount_Male_MaxOne</li>
+      </li>
+      <li>
+        <li>SpouseCount_Female_MaxOne</li>
+      </li>
+    </requireOne>-->
+    <addDesignators />
+    <addDesignatorGroups />
+    <symbolPackOverride>true</symbolPackOverride>
+    <styleItemTags>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <thingStyleCategories />
+    <preferredWeaponClasses>
+      <noble>Ultratech</noble>
+      <despised>Neolithic</despised>
+    </preferredWeaponClasses>
+
+    <exclusiveTo>
+      <li>LightRabbitPlayerFaction</li>
+    </exclusiveTo>
+    <islocateGroup>GloryElveDynastyMeme</islocateGroup>
+    <lockAccuIdeoColor>true</lockAccuIdeoColor>
+    <overrdieIcon>true</overrdieIcon>
+  </Explorite.MemeDef_Ex>
+
+  <IdeoStoryPatternDef>
+    <defName>GloryElveDynastyDescription</defName>
+    <segments>
+      <li>main</li>
+    </segments>
+    <rules>
+      <include />
+      <rulesStrings>
+        <li>main->来自另一个世界的辉明王朝。</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+
+</Defs>

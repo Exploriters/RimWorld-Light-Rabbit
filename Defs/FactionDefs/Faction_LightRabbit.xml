@@ -1,43 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <FactionDef ParentName="PlayerFactionBase">
-    <defName>Faction_LightRabbit</defName>
-    <label>辉明兔子</label>
+    <defName>LightRabbitPlayerFaction</defName>
+    <label>辉明兔</label>
     <description>一群从辉明王朝脱离出来的兔子，似乎是为什么目的而行进着。</description>
-	<isPlayer>true</isPlayer>
-    <allowedMemes>	  
-	  <!-- Supremacy -->
-      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
-	  
-	  <!-- Individualism -->
-      <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
-	  
-	  <!-- Primacy -->
-      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
-	  
-	  <!-- Misc -->
-      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
-    </allowedMemes>
-    <basicMemberKind>PawnKind_LightRabbit</basicMemberKind>
-    <pawnSingular>战士</pawnSingular>
-    <pawnsPlural>战士</pawnsPlural>
-    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
-    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>LightRabbitColonist</basicMemberKind>
+    <pawnSingular>辉明兔</pawnSingular>
+    <pawnsPlural>辉明兔</pawnsPlural>
+    <factionIconPath>UI/Ideology/GloryElveDynastyWhite</factionIconPath>
+    <factionNameMaker>NamerFactionGloryElveDynasty</factionNameMaker>
+    <settlementNameMaker>NamerSettlementGloryElveDynasty</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+    <colorSpectrum Inherit="False">
+      <li>(255, 255, 0)</li>
+    </colorSpectrum>
     <backstoryFilters>
       <li>
         <categories>
-          <li>Offworld</li>
+          <li>LightRabbit</li>
         </categories>
       </li>
     </backstoryFilters>
@@ -51,8 +32,22 @@
     </startingTechprintsResearchTags>
     <apparelStuffFilter>
       <thingDefs>
-        <li>Synthread</li>
+        <li>Cloth</li>
       </thingDefs>
     </apparelStuffFilter>
+    <allowedCultures>
+      <li>GloryElveDynasty</li>
+    </allowedCultures>
+    <structureMemeWeights>
+      <Structure_GloryElveDynasty MayRequire="Ludeon.RimWorld.Ideology">1</Structure_GloryElveDynasty>
+    </structureMemeWeights>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_GloryElveDynasty</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">GloryElveDynastyMeme</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_GloryElveDynasty</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">GloryElveDynastyMeme</li>
+    </allowedMemes>
   </FactionDef>
 </Defs>

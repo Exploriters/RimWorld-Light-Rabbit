@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <CultureDef>
+    <defName>GloryElveDynasty</defName>
+    <label>辉明王朝</label>
+    <description>存在于辉明王朝中的文化。</description>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoGloryElveDynasty</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_GloryElveDynasty</leaderTitleMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+    <allowedPlaceTags>
+      <li>OriginSpacer</li>
+      <li>ExExclusive</li>
+    </allowedPlaceTags>
+    <iconPath>UI/Ideology/GloryElveDynastyWhite</iconPath>
+    <!--<iconColor>(0.8, 0.8, 0.8)</iconColor>-->
+    <styleItemTags>
+      <li>
+        <tag>Urban</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+
+  <RulePackDef>
+    <defName>NamerIdeoGloryElveDynasty</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- The system will feed one (and only one) of these cases into this namer:
+                - key deity
+                - symbol pack
+             These cases are separate, they won't mix.
+
+             The system will also feed a set of place_* keys correesponding to the ideo's foundation PlaceDef
+         -->
+
+        <!-- From key deity -->
+        <li>r_ideoName->辉明</li>
+        <li>r_ideoAdjective->辉明</li>
+        <li>r_memberName->辉明</li>
+      </rulesStrings>
+    </rulePack>
+    <include />	
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>LeaderTitleMaker_GloryElveDynasty</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->主席</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <IdeoIconDef>
+    <defName>GloryElveDynasty</defName>
+    <iconPath>UI/Ideology/GloryElveDynastyWhite</iconPath>
+    <memes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_GloryElveDynasty</li>
+    </memes>
+  </IdeoIconDef>
+
+  <ColorDef>
+    <defName>GloryElveDynastyYellow</defName>
+    <color>(255, 255, 0)</color>
+    <memes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_GloryElveDynasty</li>
+    </memes>
+  </ColorDef>
+
+</Defs>
